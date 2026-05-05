@@ -136,15 +136,19 @@
 
 				case "winter":
 					html.style.backgroundColor = "#005393";
-					banner.textContent = "Spring Forward!";
-					logo.src = "images/spring.gif";
-					wear.src = "images/spring-wear";
+					banner.textContent = "Warm Up With Winter Gear!";
+					logo.src = "images/winter.gif";
+					wear.src = "images/winter-wear";
 				break;
-			}
+			
 
-			logo.src = "images/" + season +".gif";
-			wear.src = "images/" + season +"-wear.gif";
-		    
+			default:
+				html.style.backgroundColor = "";
+				banner.textContent = "Outfitter for All Seasons!"
+				logo.src = "images/
+				wear.src = "images/" + season +"-wear.gif";
+			break;
+			}
 		    // 4. Now you can use that 'season' variable to change pics/colors
 		    console.log("The season is: " + season);
 		}
